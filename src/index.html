@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" class="bg-secondary">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'automobile</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <link href="static/ico/image01.ico" rel="shortcut icon">
+  <script src="./js/infos.js" defer></script>
+</head>
+
+<body class="text-base-content font-LCD pb-6"></body>
+<!-- navbar -->
+<nav class="navbar bg-base-200 px-10 font-LCD">
+  <div class="flex-1">
+    <a href="index.html" class="text-3xl font-bold text-primary">L'automobile</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="calculatrice.html" class="hover:text-accent font-bold text-lg">Calculatrice</a></li>
+      <li><a href="gallery.html" class="hover:text-accent font-bold text-lg">Plus d'images</a></li>
+      <li><a href="contact.html" class="hover:text-accent font-bold text-lg">Me contacter</a></li>
+      <li><a href="merci.html" class="hover:text-accent font-bold text-lg">Merci à ...</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- introduction -->
+<section id="about" class="p-10 text-center">
+  <p class="text-base-content text-2xl">
+    Ici,<br>
+    ni turbo ni rupteur,<br>
+    simplement des photos pour partager ma passion.
+  </p>
+</section>
+
+<!-- carrousel d'images -->
+<div class="carousel w-full">
+  <div id="item1" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image1.png" class="w-auto h-[480px]" />
+  </div>
+  <div id="item2" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image2.png" class="w-auto h-[480px]" />
+  </div>
+  <div id="item3" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image3.png" class="w-auto h-[480px]" />
+  </div>
+  <div id="item4" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image4.png" class="w-auto h-[480px]" />
+  </div>
+  <div id="item5" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image5.png" class="w-auto h-[480px]" />
+  </div>
+  <div id="item6" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image6.png" class="w-auto h-[480px]" />
+  </div>
+  <div id="item7" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image7.png" class="w-auto h-[480px]" />
+  </div>
+  <div id="item8" class="carousel-item w-full flex justify-center items-center">
+    <img src="static/cars/image8.png" class="w-auto h-[480px]" />
+  </div>
+</div>
+
+<!-- boutons pour changer de voiture -->
+<div class="flex w-full justify-center gap-2 py-2">
+  <a href="#item1" class="btn btn-xs boutonvoit" data-model="mclaren">1</a>
+  <a href="#item2" class="btn btn-xs boutonvoit" data-model="porsche">2</a>
+  <a href="#item3" class="btn btn-xs boutonvoit" data-model="bmw">3</a>
+  <a href="#item4" class="btn btn-xs boutonvoit" data-model="pagani">4</a>
+  <a href="#item5" class="btn btn-xs boutonvoit" data-model="maserati">5</a>
+  <a href="#item6" class="btn btn-xs boutonvoit" data-model="lamborghini">6</a>
+  <a href="#item7" class="btn btn-xs boutonvoit" data-model="mercedes">7</a>
+  <a href="#item8" class="btn btn-xs boutonvoit" data-model="nissan">8</a>
+</div>
+
+<!-- informations qui changent selon carrousel -->
+<div class="flex justify-center content-center w-full no-swipe mt-6">
+  <div class="p4 w-1/3 collapse collapse-plus bg-base-100 text-pink-900 rounded" tabindex="0">
+    <div class="collapse-title font-semibold text-center text-2xl" id="titrevoit"></div>
+    <div class="collapse-content text-sm">
+      <p id="anneevoit" class="text-lg"></p>
+      <p id="moteurvoit" class="text-lg"></p>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
