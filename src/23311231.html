@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" class="bg-secondary">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <link href="static/ico/image05.ico" rel="shortcut icon">
+  <script src="./js/formulaire.js" defer></script>
+  <script src="./js/questionnaire.js" defer></script>
+  <script src="./js/mailto.js" defer></script>
+</head>
+
+<body class="text-base-content h-screen font-LCD">
+  <!-- navbar -->
+  <nav class="navbar bg-base-200 px-10 font-LCD">
+    <div class="flex-1">
+      <a href="index.html" class="text-3xl font-bold font-LCD text-primary">L'automobile</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="calculatrice.html" class="hover:text-accent font-bold text-lg">Calculatrice</a></li>
+        <li><a href="gallery.html" class="hover:text-accent font-bold text-lg">Plus d'images</a></li>
+        <li><a href="contact.html" class="hover:text-accent font-bold text-lg">Me contacter</a></li>
+        <li><a href="merci.html" class="hover:text-accent font-bold text-lg">Merci à ...</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- fin du questionnaire = bouton formulaire -->
+  <section id="formSection" class="text-center flex flex-col items-center justify-center">
+    <h1 class="text-3xl font-bold text-primary">Formulaire</h1>
+    <p class="text-base-content text-lg">Vous avez fini le questionnaire avec succès!</p>
+    <button id="startform" class="btn btn-soft btnr mb-5">
+      <p class="text-lg font-LCD">Remplir le formulaire</p>
+    </button>
+    <img id="formImage" src="static/cats/formucat.png" class="w-[360px] h-auto mb-5" />
+  </section>
+  
+  <!-- formulaire -->
+  <div id="formu" class="flex flex-col items-center justify-center w-full h-full" style="display: none;">
+    <fieldset class="fieldset w-xs bg-base-200 p-4 rounded-box">
+      <label class="fieldset-label font-bold text-lg">Nom</label>
+      <input type="nom" class="input font-bold" placeholder="entrez votre nom" />
+      <label class="fieldset-label font-bold text-lg">Prénom</label>
+      <input type="prenom" class="input font-bold" placeholder="entrez votre prénom" />
+      <label class="fieldset-label font-bold text-lg">E-mail</label>
+      <input type="email" class="input font-bold" placeholder="entrez votre mail" />
+      <label class="fieldset-label font-bold text-lg">Message</label>
+      <textarea class="textarea h-24 font-bold" placeholder="entrez un message"></textarea>
+      <button class="btn btn-neutral mt-4">Soumettre</button>
+    </fieldset>
+  </div>
+</body>
+
+</html>

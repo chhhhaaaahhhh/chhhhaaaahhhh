@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" class="bg-secondary">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculatrice</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <link href="static/ico/image02.ico" rel="shortcut icon">
+  <script src="./js/calc.js" defer></script>
+</head>
+
+<body class="text-base-content h-screen font-LCD">
+  <!-- navbar -->
+  <nav class="navbar bg-base-200 px-10">
+    <div class="flex-1">
+      <a href="index.html" class="text-3xl font-bold text-primary">L'automobile</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="calculatrice.html" class="hover:text-accent font-bold text-lg">Calculatrice</a></li>
+        <li><a href="gallery.html" class="hover:text-accent font-bold text-lg">Plus d'images</a></li>
+        <li><a href="contact.html" class="hover:text-accent font-bold text-lg">Me contacter</a></li>
+        <li><a href="merci.html" class="hover:text-accent font-bold text-lg">Merci à ...</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- calculatrice -->
+  <h1 class="text-5xl font-bold text-center mb-5 text-primary">Calculatrice</h1>
+  <div class="calculator bg-base-200 p-5 rounded-box shadow-lg mx-auto" style="max-width: 20rem;">
+    <div id="screen" class="screen text-right p-3 text-2xl bg-base-300 rounded mb-5 h-12 text-base-content"></div>
+    <div class="buttons-grid grid grid-cols-4 gap-2">
+      <button onclick="appendValue('7')" class="btn btn-secondary">7</button>
+      <button onclick="appendValue('8')" class="btn btn-secondary">8</button>
+      <button onclick="appendValue('9')" class="btn btn-secondary">9</button>
+      <button onclick="appendValue('/')" class="btn btn-primary">÷</button>
+      <button onclick="appendValue('4')" class="btn btn-secondary">4</button>
+      <button onclick="appendValue('5')" class="btn btn-secondary">5</button>
+      <button onclick="appendValue('6')" class="btn btn-secondary">6</button>
+      <button onclick="appendValue('*')" class="btn btn-primary">×</button>
+      <button onclick="appendValue('1')" class="btn btn-secondary">1</button>
+      <button onclick="appendValue('2')" class="btn btn-secondary">2</button>
+      <button onclick="appendValue('3')" class="btn btn-secondary">3</button>
+      <button onclick="appendValue('-')" class="btn btn-primary">−</button>
+      <button onclick="appendValue('0')" class="btn btn-secondary">0</button>
+      <button onclick="appendValue('.')" class="btn btn-secondary">.</button>
+      <button onclick="calculateResult()" class="btn btn-accent" style="visibility: hidden" ;></button>
+      <button onclick="appendValue('+')" class="btn btn-primary">+</button>
+    </div>
+    <button onclick="calculateResult()" class="btn btn-neutral w-full mt-5">=</button>
+    <button onclick="clearScreen()" class="btn btn-error w-full mt-5">Effacer</button>
+  </div>
+</body>
+
+</html>
